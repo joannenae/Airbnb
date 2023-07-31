@@ -10,7 +10,7 @@ const HomeScreen = () => {
       <Pressable
         style={styles.searchButton}
         onPress={() => console.warn('Search btn clicked')}>
-        <Fontiso name="search" size={25} color={'#f15454'} />
+        <Fontiso name="search" size={20} color={'#f15454'} />
         <Text style={styles.searchButtonText}>Where are you going?</Text>
       </Pressable>
       <ImageBackground

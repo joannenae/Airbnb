@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     fontSize: 17,
-    fontWeight: 'bold',
+    fontWeight: '600',
   },
   searchButton: {
     position: 'absolute',
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
   },
   searchButtonText: {
     fontSize: 17,
-    fontWeight: 'bold',
+    marginLeft: 5,
   },
 });
 
