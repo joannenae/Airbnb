@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     color: 'gray',
   },
   description: {
-    fontSize: 19,
+    fontSize: 18,
     lineHeight: 25,
   },
   prices: {

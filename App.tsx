@@ -7,11 +7,13 @@
 
 import React from 'react';
 
-import {SafeAreaView, ScrollView, StatusBar} from 'react-native';
-import feed from './assets/data/feed';
+import {SafeAreaView, StatusBar} from 'react-native';
+import DestinationSearch from './src/screens/DestinationSearch';
+// import feed from './assets/data/feed';
 
 // import HomeScreen from './src/screens/Home';
-import Post from './src/components/Post';
+// import SearchResultsScreen from './src/screens/SearchResults';
+// import Post from './src/components/Post';
 
 function App(): JSX.Element {
   return (
@@ -19,11 +21,9 @@ function App(): JSX.Element {
       <StatusBar barStyle={'dark-content'} />
       <SafeAreaView>
         {/* <HomeScreen /> */}
-        <ScrollView>
-          {feed.map(el => {
-            return <Post el={el} />;
-          })}
-        </ScrollView>
+        {/* <Post el={el} /> */}
+        {/* <SearchResultsScreen /> */}
+        <DestinationSearch />
       </SafeAreaView>
     </>
   );
