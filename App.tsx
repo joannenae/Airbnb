@@ -7,9 +7,10 @@
 
 import React from 'react';
 
-import {SafeAreaView, StatusBar} from 'react-native';
+import {SafeAreaView, ScrollView, StatusBar} from 'react-native';
+import feed from './assets/data/feed';
 
-import HomeScreen from './src/screens/Home';
+// import HomeScreen from './src/screens/Home';
 import Post from './src/components/Post';
 
 function App(): JSX.Element {
@@ -18,7 +19,11 @@ function App(): JSX.Element {
       <StatusBar barStyle={'dark-content'} />
       <SafeAreaView>
         {/* <HomeScreen /> */}
-        <Post />
+        <ScrollView>
+          {feed.map(el => {
+            return <Post el={el} />;
+          })}
+        </ScrollView>
       </SafeAreaView>
     </>
   );
