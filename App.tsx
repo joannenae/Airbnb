@@ -8,12 +8,14 @@
 import React from 'react';
 
 import {SafeAreaView, StatusBar} from 'react-native';
-import DestinationSearch from './src/screens/DestinationSearch';
+
+import GuestsScreen from './src/screens/Guests';
 // import feed from './assets/data/feed';
 
 // import HomeScreen from './src/screens/Home';
 // import SearchResultsScreen from './src/screens/SearchResults';
 // import Post from './src/components/Post';
+// import DestinationSearch from './src/screens/DestinationSearch';
 
 function App(): JSX.Element {
   return (
@@ -23,7 +25,8 @@ function App(): JSX.Element {
         {/* <HomeScreen /> */}
         {/* <Post el={el} /> */}
         {/* <SearchResultsScreen /> */}
-        <DestinationSearch />
+        {/* <DestinationSearch /> */}
+        <GuestsScreen />
       </SafeAreaView>
     </>
   );
