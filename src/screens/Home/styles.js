@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
   },
   searchButton: {
     position: 'absolute',
-    top: 30,
+    top: 60,
     zIndex: 1,
     backgroundColor: 'white',
     width: Dimensions.get('screen').width - 20,
