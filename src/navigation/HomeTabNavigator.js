@@ -1,6 +1,7 @@
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import React from 'react';
 import Home from '../screens/Home';
+import ExploreNavigator from '../navigation/ExploreNavigator';
 
 const Tab = createBottomTabNavigator();
 
@@ -17,8 +18,8 @@ const HomeTabNavigator = () => {
         activeTintColor: '#f15454',
       }}>
       <Tab.Screen
-        name={'Explorer'}
-        component={Home}
+        name={'Explore'}
+        component={ExploreNavigator}
         options={{
           tabBarIcon: ({color}) => (
             <Fontisto name="search" size={25} color={color} />
